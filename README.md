@@ -39,6 +39,9 @@ To solve this: run on the ARM board or run via QEMU
 ## code 3.6: Connect gdb and QEMU
 - $ arm-none-eabi-gdb
 - $ (gdb) target remote:1234
+- `Note`: if you have a trouble to use gdb, 
+  - when you've done: sudo apt install arm-none-eabi-gdb
+  - you do: `ln -s /usr/bin/gdb-multiarch /usr/bin/arm-none-eabi-gdb` to enable with arm-none-eabi-gdb on user side
 
 ## code 3.7: Build Automation
 
