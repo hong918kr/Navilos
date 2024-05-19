@@ -29,6 +29,6 @@
         LDR     R0, =0x10000000
         LDR     R1, [R0]
 
-    dummpy_handler:
+    dummy_handler:
         B .
 .end
