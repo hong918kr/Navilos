@@ -3,6 +3,7 @@ SECTIONS
 {
     . = 0x0;
 
+
     .text :
     {
         *(vector_start)
@@ -16,4 +17,4 @@ SECTIONS
     {
         *(.bss)
     }
-}
+} 

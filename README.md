@@ -55,3 +55,24 @@ To solve this: run on the ARM board or run via QEMU
 
 
 ## code 4.1: Exception Vector Table initial code Entry.S
+
+
+
+## code 4.5: Modify Entry.S to setup reset handler with stack build
+```asm
+MRS r0, cpsr
+BIC r1, r0, #0x1F
+ORR r1, r1, #ARM_MODE_BIT_SVC
+MSR cpsr, r1
+LDR sp, =SVC_STACK_TOP
+```
+
+
+- MRS: Move to ARM register from system coprocessor register (Move d)
+- BIC: bit clear
+- ORR: Logical ORR
+- MSR: ARM register to system coprocessor register
+- LDR: Load
+
+In case, you got warning: cc1: warning: switch '-mcpu=cortex-a8' conflicts with '-march=armv7-a' switch
+-> https://bugs.launchpad.net/gcc-linaro/+bug/662720
