@@ -21,3 +21,18 @@ code 3.5: execute axf file by QEMU
 > $ arm-none-eabi-gdb : execute gdb
 > (gdb) target remote:1234
 > (gdb) x/4x 0
+
+
+when compile, add -g : to add debugging symbol
+
+
+code 4.3:
+$make clean
+$make all
+$make debug
+$make gdb
+(gdb) target remote:1234
+(gdb) file build/navilos.axf -> y
+(gdb) list (check if file reads debugging symbol)
+(gdb) info register (i r)
+(gdb) step (s)
