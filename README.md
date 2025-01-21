@@ -36,3 +36,7 @@ $make gdb
 (gdb) list (check if file reads debugging symbol)
 (gdb) info register (i r)
 (gdb) step (s)
+
+
+- code download link: 
+  - $   wget https://github.com/navilera/Navilos/archive/fcd6a32a91d5d4053fbcd7b7e8689f77c74c2989.zip
