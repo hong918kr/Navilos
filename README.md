@@ -40,3 +40,5 @@ $make gdb
 
 - code download link: 
   - $   wget https://github.com/navilera/Navilos/archive/fcd6a32a91d5d4053fbcd7b7e8689f77c74c2989.zip
+- Ch 8 - Task
+  - $   wget https://github.com/navilera/Navilos/archive/e9b04bb60da9b282ec2761e5036a1aa9a6d2be68.zip
